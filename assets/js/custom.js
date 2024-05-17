@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         
@@ -75,10 +74,9 @@ $(this).addClass("active");
             slidesToScroll: 1
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
+
+    AOS.init();
 
 });
