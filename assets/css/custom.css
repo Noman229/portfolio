@@ -1,30 +1,14 @@
 :root{
 	--primary-color: #004bbe;
-	--dark-text: #222222;
+	--dark-text: #000000;
 	--light-text: #ffffff;
 }
 body{
 	position: relative;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-	letter-spacing: 1px;
-}
-p,a{
-  font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
-	letter-spacing: 1px;
-}
-@media (max-width: 574px){
-  p{
-    font-size: 14px;
-  }
-}
 /**************** Back to Top Styling ****************/
 .back-btn-wrap {
   display: inline-block;
@@ -51,18 +35,18 @@ p,a{
   border-radius: 50%;
 }
 .back-btn-wrap:before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: var(--primary-color);
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
-    border-radius: 50%;
-    opacity: 0.08;
-    animation: scale 1.2s ease-out infinite 1s;
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  border-radius: 50%;
+  opacity: 0.08;
+  animation: scale 1.2s ease-out infinite 1s;
 }
 @keyframes scale {
   0% {
@@ -104,7 +88,6 @@ p,a{
   line-height: 40px;
   padding: 0;
   border: none;
-  
 }
 .btn-3 span {
   position: relative;
@@ -119,7 +102,7 @@ p,a{
   content: "";
   right: 0;
   top: 0;
-   background: var(--primary-color);
+  background: var(--primary-color);
   transition: all 0.3s ease;
 }
 .btn-3:before {
@@ -131,7 +114,7 @@ p,a{
   height: 2px;
 }
 .btn-3:hover{
-   background: transparent;
+  background: transparent;
   box-shadow: none;
 }
 .btn-3:hover:before {
@@ -141,7 +124,7 @@ p,a{
   width: 100%;
 }
 .btn-3 span:hover{
-   color: var(--primary-color);
+  color: var(--primary-color);
 }
 .btn-3 span:before,
 .btn-3 span:after {
@@ -149,7 +132,7 @@ p,a{
   content: "";
   left: 0;
   bottom: 0;
-   background: var(--primary-color);
+  background: var(--primary-color);
   transition: all 0.3s ease;
 }
 .btn-3 span:before {
@@ -182,66 +165,6 @@ p,a{
   height: 45px;
   border-bottom: 2px solid var(--primary-color);
 }
-
-/**************** Header Styling ****************/
-.topbar{
-  background-color: #f1f7ff;
-  padding: 8px 0;
-}
-.topbar .row > div{
-  display: flex;
-  align-items: center;
-}
-.topbar .row > div:first-child{
-  justify-content: start;
-}
-.topbar .row > div:last-child{
-  justify-content: end;
-}
-.contact-info, .social-links{
-  display: flex;
-}
-.contact-info li, .social-links li{
-  padding-right: 10px;
-  margin-right: 10px;
-  border-right: 1px solid #eee;
-}
-.contact-info li:last-child, .social-links li:last-child{
-  border-right: none;
-}
-.contact-info li a, .social-links li a{
-  color: #222222;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  text-decoration: none;
-}
-.contact-info li a i, .social-links li a i{
-  font-size: 18px;
-}
-.contact-info li a i{
-  margin-right: 5px;
-}
-
-
-@media (max-width: 991px){
-  .topbar{
-    padding: 5px 0;
-  }
-  .contact-info{
-    display: block;
-  }
-  .contact-info li{
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-  .contact-info li a{
-    font-size: 12px;
-  }
-}
 /**************** Header Styling ****************/
 .navbar {
   padding: 7px 0;
@@ -251,8 +174,9 @@ ul.navbar-nav {
   justify-content: end;
 }
 .nav-link{
-  display: inline-block;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
 }
 .sub-menu{
   position: absolute;
@@ -266,22 +190,13 @@ ul.navbar-nav {
   z-index: 9;
   display: none;
 }
-
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
-
 .dropdown>.dropdown-toggle:active {
-    pointer-events: none;
+  pointer-events: none;
 }
-.nav-item {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: var(--dark-text);
-  position: relative;
-  padding: 0 5px;
-}
+
 a.nav-link:hover{
 	color: var(--primary-color);
 }
@@ -331,6 +246,10 @@ a.nav-link:hover{
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
+  text-decoration: none;
+}
+.footer-links a:hover{
+  text-decoration: underline;
 }
 .social-links{
   justify-content: end;
@@ -362,7 +281,7 @@ a.nav-link:hover{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 600px;
+  min-height: 800px;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -454,6 +373,9 @@ a.nav-link:hover{
   text-decoration: none;
   font-family: 'Alkatra', cursive;
 }
+.services-heading h4{
+ font-weight: 700; 
+}
 .card-services.pt-25 {
   padding-top: 25px;
 }
@@ -542,6 +464,7 @@ a.nav-link:hover{
   margin-bottom: 30px;
 }
 .gallery_product img {
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -553,7 +476,7 @@ a.nav-link:hover{
 }
 .review-item{
   background-color: var(--light-text);
-  margin-bottom: 20px;
+  margin: 20px;
 }
 img.client-image {
   border-radius: 50%;
@@ -606,4 +529,55 @@ img.client-image {
 .intro-content h3{
   color: var(--primary-color);
 }
-/**************************** FAQ's Styling *******************************/
+
+/**************************** Contact Styling *******************************/
+#contact{
+  background-image: url('../images/home/hero-bg.webp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 400px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#contact::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  opacity: 0.6;
+}
+#contact .container{
+  position: relative;
+  z-index: 999;
+}
+.cta-content{
+  color: #ffffff;
+}
+.contact h2{
+  font-size: 50px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 60px;
+  color: #ffffff;
+}
+.contact span{
+  display: block;
+  color: #FFC300;
+}
+.contact p{
+  margin-bottom: 20px;
+}
+.contact a{
+  background-color: #ffffff;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+}
