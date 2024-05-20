@@ -10,7 +10,7 @@ body{
 }
 /********************* Hero Styling *****************************/
 #hero{
-  background-image: url('../images/home/hero-bg.webp');
+  background-image: url('../images/hero-bg.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -220,7 +220,7 @@ img.client-image {
 
 /**************************** Contact Styling *******************************/
 #contact{
-  background-image: url('../images/home/hero-bg.webp');
+  background-image: url('../images/hero-bg.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
