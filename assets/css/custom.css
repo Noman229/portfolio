@@ -1,10 +1,9 @@
 :root{
-	--primary-color: #004bbe;
+	--primary-color: #0d6efd;
 }
 body{
   overflow-x: hidden;
 }
-
 .footer-links a:hover{
   text-decoration: underline !important;
 }
@@ -31,49 +30,13 @@ body{
   background-color: #222;
   opacity: 0.6;
 }
-
 .hero-content h1{
   font-size: 56px;
 }
 
 /********************* Services Styling *****************************/
-#services{
-  padding: 50px 0;
-  background-color: #f1f7ff;
-}
-.section-top-content{
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.services-heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  vertical-align: middle;
-  flex-direction: column;
-  line-height: 0.7;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'Alkatra', cursive;
-}
-.services-heading h4{
- font-weight: 700; 
-}
-.card-services.pt-25 {
-  padding-top: 25px;
-}
 .card-services {
-  display: block;
-  position: relative;
-  max-width: 100%;
-  border-radius: 9px;
   margin: 15px;
-  text-decoration: none;
   z-index: 0;
   overflow: hidden;
   box-shadow: -5px 5px var(--primary-color);
@@ -82,7 +45,7 @@ body{
   transition: 0.25s ease-in-out;
 }
 .card-services:hover{
-  border: 1px solid var(--light-text);
+  border: 1px solid #ffffff;
 }
 .card-services:before {
   content: "";
@@ -97,23 +60,6 @@ body{
   transform: scale(1);
   transform-origin: 30% 30%;
   transition: transform 0.25s ease-out;
-}
-.card-services a {
-  color: var(--dark-text);
-  text-decoration: none;
-  padding: 22px 30px;
-  display: block;
-}
-.card-services h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.card-services:hover h3, .card-services:hover .small{
-  color: var(--light-text);
-}
-.small, small {
-  font-size: 15px !important;
-  line-height: 1.5;
 }
 .go-corner {
   display: flex;
@@ -134,64 +80,10 @@ body{
 .card-services:hover:before {
   transform: scale(21);
 }
-
-/****************************** Projects Styling *****************************/
-#projects{
-  padding: 50px 0;
-  overflow-x: hidden;
+.card-services:hover h3, .card-services:hover p{
+  color: #ffffff !important;
 }
-.filter-button {
-  font-size: 18px;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 30px;
-}
-.gallery_product {
-  margin-bottom: 30px;
-}
-.gallery_product img {
-  width: 100%;
-  border-radius: 10px;
-}
-
 /*********************** Reviews Styling ****************************/
-#reviews{
-	padding: 50px 0 120px 0;
-	background-color: #f1f7ff;
-  overflow-x: hidden;
-}
-.review-item{
-  background-color: var(--light-text);
-  margin: 20px;
-}
-img.client-image {
-  border-radius: 50%;
-  width: 100px;
-  margin: 0 auto;
-}
-.review-item ul{
-  display: block;
-}
-.review-item li a i{ 
-  color: #FF9800;
-}
-.review-item blockquote{
-  position: relative;
-  padding: 20px 0;
-  min-height: 200px;
-}
-.clinet-location{
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-.client-city{
-  display: block;
-  margin-top: 5px;
-  color: var(--dark-text);
-}
 .slick-prev:before, .slick-next:before{
   color: var(--primary-color);
   font-size: 30px;
@@ -203,8 +95,6 @@ img.client-image {
 .slick-dots li.slick-active button:before{
   color: var(--primary-color);
 }
-
-
 /**************************** About Styling *******************************/
 #about{
   padding: 50px 0;
