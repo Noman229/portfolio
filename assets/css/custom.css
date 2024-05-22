@@ -96,16 +96,10 @@ body{
   color: var(--primary-color);
 }
 /**************************** About Styling *******************************/
-#about{
-  padding: 50px 0;
-}
 #about .row > div:last-child{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.intro-content h3{
-  color: var(--primary-color);
 }
 
 /**************************** Contact Styling *******************************/
@@ -131,31 +125,6 @@ body{
   background-color: #222;
   opacity: 0.6;
 }
-#contact .container{
-  position: relative;
-  z-index: 999;
-}
-.cta-content{
-  color: #ffffff;
-}
 .contact h2{
-  font-size: 50px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 60px;
-  color: #ffffff;
-}
-.contact span{
-  display: block;
-  color: #FFC300;
-}
-.contact p{
-  margin-bottom: 20px;
-}
-.contact a{
-  background-color: #ffffff;
-  padding: 10px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  display: inline-block;
+  font-size: 56px;
 }
