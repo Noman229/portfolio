@@ -48,7 +48,7 @@ body{
   overflow: hidden;
   box-shadow: -5px 5px var(--primary-color);
   border: 1px solid var(--primary-color);
-  height: 200px;
+  height: 230px;
   transition: 0.25s ease-in-out;
 }
 .card-services:hover{
