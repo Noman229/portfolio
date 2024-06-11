@@ -178,6 +178,20 @@ p{
   font-size: 56px;
 }
 
+@media (max-width: 1024px) {
+  .contact h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 30px;
+  }
+  .footer-links ul{
+    flex-wrap: wrap;
+  }
+}
+
 /**************************** Scroll Styling *******************************/
 ::-webkit-scrollbar {
   width: 10px;
