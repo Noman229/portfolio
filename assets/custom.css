@@ -4,6 +4,14 @@
 body{
   overflow-x: hidden;
 }
+p{
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+}
 #footer a:hover{
   text-decoration: underline !important;
 }
@@ -41,6 +49,19 @@ body{
   font-size: 56px;
 }
 
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  #hero{
+    min-height: 440px;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
 /********************* Services Styling *****************************/
 .card-services {
   margin: 15px;
