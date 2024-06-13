@@ -39,12 +39,12 @@ services.forEach((serviceItem) => {
 // Site Projects
 const projectsRow = document.getElementById('projectsRow')
 const projects = [
-  {title: 'Logo Marky', details: '', image: '/assets/images/portfolio-mockup/logo-marky.jpg', url: 'https://logomarky.com/'},
-  {title: 'Emart Comfort', details: '', image: '/assets/images/portfolio-mockup/emart-comfort.jpg', url: 'https://emartcomfort.com/'},
-  {title: 'Greene', details: '', image: '/assets/images/portfolio-mockup/greene.jpg', url: 'https://testingsitelink.online/greene/'},
-  {title: 'Green Residency Muzaffarabad', details: '', image: 'assets/images/portfolio-mockup/green-residency-muzaffarabad.jpg', url: 'https://greenresidencymuzaffarabad.com/'},
-  {title: 'Take Out Eats', details: '', image: 'assets/images/portfolio-mockup/take-out-eats.jpg', url: 'https://take-out-eats.com/'},
-  {title: 'Commeverest', details: '', image: 'assets/images/portfolio-mockup/commeverest.jpg', url: 'https://testingsitelink.online/commeverest/'},
+  {title: 'Logo Marky', image: '/assets/images/portfolio-mockup/logo-marky.jpg', url: 'https://logomarky.com/'},
+  {title: 'Emart Comfort', image: '/assets/images/portfolio-mockup/emart-comfort.jpg', url: 'https://emartcomfort.com/'},
+  {title: 'Greene', image: '/assets/images/portfolio-mockup/greene.jpg', url: 'https://testingsitelink.online/greene/'},
+  {title: 'Green Residency Muzaffarabad', image: 'assets/images/portfolio-mockup/green-residency-muzaffarabad.jpg', url: 'https://greenresidencymuzaffarabad.com/'},
+  {title: 'Take Out Eats', image: 'assets/images/portfolio-mockup/take-out-eats.jpg', url: 'https://take-out-eats.com/'},
+  {title: 'Commeverest', image: 'assets/images/portfolio-mockup/commeverest.jpg', url: 'https://testingsitelink.online/commeverest/'},
 ]
 
 projects.forEach((projectItem) => {
